@@ -2,13 +2,13 @@
 
 use std::{collections::BTreeSet, ops::Not, str::FromStr, sync::Arc};
 
-use fxhash::FxHashMap;
 use indexmap::IndexSet;
 use pep440_rs::VersionSpecifiers;
 use pep508_rs::{ExtraName, Requirement};
 use rattler_conda_types::{
     NoArchType, PackageName, PackageRecord, PackageUrl, Platform, VersionWithSource,
 };
+use rustc_hash::FxHashMap;
 use serde::Deserialize;
 use serde_with::{serde_as, skip_serializing_none, OneOrMany};
 use url::Url;

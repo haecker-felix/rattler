@@ -17,7 +17,6 @@ experimental_extras = []
 [dependencies]
 chrono = { workspace = true }
 file_url = { workspace = true }
-fxhash = { workspace = true }
 glob = { workspace = true }
 hex = { workspace = true }
 itertools = { workspace = true }
@@ -31,6 +30,7 @@ rattler_digest = { workspace = true, default-features = false, features = [
 rattler_macros = { workspace = true, default-features = false }
 rattler_redaction = { workspace = true, default-features = false }
 regex = { workspace = true }
+rustc-hash = { workspace = true }
 simd-json = { workspace = true, features = ["serde_impl"] }
 serde = { workspace = true, features = ["derive", "rc"] }
 serde_json = { workspace = true }

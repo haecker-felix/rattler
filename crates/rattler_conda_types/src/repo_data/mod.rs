@@ -11,9 +11,9 @@ use std::{
     path::Path,
 };
 
-use fxhash::{FxHashMap, FxHashSet};
 use rattler_digest::{serde::SerializableHash, Md5Hash, Sha256Hash};
 use rattler_macros::sorted;
+use rustc_hash::{FxHashMap, FxHashSet};
 use serde::{Deserialize, Serialize};
 use serde_with::{serde_as, skip_serializing_none};
 use thiserror::Error;
@@ -586,7 +586,7 @@ fn sort_set_alphabetically<S: serde::Serializer>(
 
 #[cfg(test)]
 mod test {
-    use fxhash::FxHashMap;
+    use rustc_hash::FxHashMap;
 
     use crate::{
         repo_data::{compute_package_url, determine_subdir},

@@ -78,9 +78,9 @@
 
 use std::{collections::HashMap, io::Read, path::Path, str::FromStr, sync::Arc};
 
-use fxhash::FxHashMap;
 use indexmap::IndexSet;
 use rattler_conda_types::{Platform, RepoDataRecord};
+use rustc_hash::FxHashMap;
 
 mod builder;
 mod channel;

@@ -1,5 +1,5 @@
 use crate::PackageRecord;
-use fxhash::{FxHashMap, FxHashSet};
+use rustc_hash::{FxHashMap, FxHashSet};
 
 /// Sorts the packages topologically
 ///

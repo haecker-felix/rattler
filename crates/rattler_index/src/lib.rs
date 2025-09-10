@@ -14,7 +14,6 @@ use anyhow::{Context, Result};
 use bytes::buf::Buf;
 use fs_err::{self as fs};
 use futures::{stream::FuturesUnordered, StreamExt};
-use fxhash::FxHashMap;
 use indicatif::{MultiProgress, ProgressBar, ProgressStyle};
 use opendal::{
     layers::RetryLayer,
@@ -32,6 +31,7 @@ use rattler_package_streaming::{
     seek::{self, stream_conda_content},
 };
 use rattler_s3::ResolvedS3Credentials;
+use rustc_hash::FxHashMap;
 use serde::Serialize;
 use sha2::{Digest, Sha256};
 use tokio::sync::Semaphore;

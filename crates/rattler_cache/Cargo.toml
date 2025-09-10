@@ -23,7 +23,6 @@ dirs = { workspace = true }
 futures = { workspace = true }
 fs-err = { workspace = true }
 fs4 = { workspace = true, features = ["fs-err3-tokio", "tokio"] }
-fxhash = { workspace = true }
 itertools = { workspace = true }
 parking_lot = { workspace = true }
 rattler_conda_types = { workspace = true, default-features = false }
@@ -38,6 +37,7 @@ tracing = { workspace = true }
 url = { workspace = true }
 thiserror = { workspace = true }
 reqwest-middleware = { workspace = true }
+rustc-hash = { workspace = true }
 digest = { workspace = true }
 simple_spawn_blocking = { workspace = true, features = ["tokio"] }
 rayon = { workspace = true }

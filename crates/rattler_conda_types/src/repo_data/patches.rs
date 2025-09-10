@@ -2,7 +2,7 @@
 
 use std::{collections::BTreeSet, io, path::Path};
 
-use fxhash::{FxHashMap, FxHashSet};
+use rustc_hash::{FxHashMap, FxHashSet};
 use serde::{Deserialize, Serialize};
 use serde_with::{serde_as, skip_serializing_none};
 

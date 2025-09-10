@@ -1,5 +1,5 @@
 use chrono::{DateTime, Utc};
-use fxhash::FxHashMap;
+use rustc_hash::FxHashMap;
 use serde::{de::Error as _, ser::Error, Deserialize, Deserializer, Serialize, Serializer};
 use serde_with::{DeserializeAs, SerializeAs};
 use std::borrow::Cow;

@@ -1,8 +1,8 @@
 //! Structs to deal with repodata "shards" which are per-package repodata files.
 
 use chrono::{DateTime, Utc};
-use fxhash::{FxHashMap, FxHashSet};
 use rattler_digest::Sha256Hash;
+use rustc_hash::{FxHashMap, FxHashSet};
 use serde::{Deserialize, Serialize};
 
 use crate::PackageRecord;

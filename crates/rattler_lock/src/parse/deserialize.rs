@@ -5,11 +5,11 @@ use std::{
     sync::Arc,
 };
 
-use fxhash::FxHashMap;
 use indexmap::IndexSet;
 use itertools::Either;
 use pep508_rs::ExtraName;
 use rattler_conda_types::{PackageName, Platform, VersionWithSource};
+use rustc_hash::FxHashMap;
 use serde::{de::Error, Deserialize, Deserializer};
 use serde_with::{serde_as, DeserializeAs};
 use serde_yaml::Value;

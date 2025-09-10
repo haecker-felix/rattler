@@ -11,9 +11,9 @@ use std::{
 };
 
 use fs_err as fs;
-use fxhash::{FxHashMap as HashMap, FxHashSet as HashSet};
 use indexmap::IndexSet;
 use itertools::Itertools;
+use rustc_hash::{FxHashMap as HashMap, FxHashSet as HashSet};
 
 /// Type to represent path owner. Using `Arc<str>` to avoid cloning
 /// overhead while maintaining ownership semantics.

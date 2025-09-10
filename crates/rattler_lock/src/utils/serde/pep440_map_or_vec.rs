@@ -1,6 +1,6 @@
-use fxhash::FxBuildHasher;
 use indexmap::IndexMap;
 use pep508_rs::{Requirement, VersionOrUrl};
+use rustc_hash::FxBuildHasher;
 use serde::{Deserialize, Deserializer};
 use serde_with::{serde_as, DeserializeAs, DisplayFromStr};
 
